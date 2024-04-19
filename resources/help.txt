@@ -1,0 +1,22 @@
+[35m[4m[1m# The Everything API[22m[24m[39m
+
+[0mThis is an API that is able to return almost any GET REST endpoint you want. Just provide the URL and the API will return the AI generated JSON for you inferring the content from the URL, it uses OpenAI completion API with GPT-3.5-Turbo by default to generate the JSON so it requires an OpenAI API key.[0m
+
+[0mOnce an endpoint is consumed, the data is stored in a cache that does not expire. This way, the API can return the same data without having to generate the original endpoint again.[0m
+
+[32m[1m## Usage[22m[39m
+
+    $ OPENAI_API_KEY=[31m"..."[39m everything-api
+
+[0mAfter launching the API, you can consume it at [33mhttp://localhost:3000[39m and then access the URL you want to generate the JSON for at that server[0m
+
+    $ curl http://localhost:3000/cities/colombia
+
+[32m[1m## Options available[22m[39m
+
+[0m[1m--port[22m: The port where the API will be available. Default is 3000[0m
+[0m[1m--model[22m: The OpenAI model to use. Default is [33mgpt-3.5-turbo[39m[0m
+[0m[1m--minimum[22m: The minimum number of items to return. Default is 1[0m
+[0m[1m--maximum[22m: The maximum number of items to return. Default is 10[0m
+[0m[1m--clean[22m: The cache will be cleaned before starting the API[0m
+
