@@ -24,6 +24,10 @@
   ],
   "author": "edsadr",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/edsadr/everything-api"
+  },
   "dependencies": {
     "fastify": "^4.26.2",
     "file-system-cache": "^2.4.4",

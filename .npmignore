@@ -134,3 +134,4 @@ resources/generate-help.js
 .env-template
 .vscode/
 tests/
+.github/
