@@ -1,6 +1,6 @@
 {
   "name": "everything-api",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A mocking API that is able to reply any GET request with AI generated JSON using OpenAI API inferring the data to be returned from the request URL",
   "main": "index.js",
   "bin": {
